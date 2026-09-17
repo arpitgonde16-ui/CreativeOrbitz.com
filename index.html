@@ -329,7 +329,7 @@
     }
     .before-after .container { text-align: center; }
     .ba-slider {
-      position: relative; max-width: 440px; margin: 48px auto 0;
+      position: relative; width: 100%; max-width: 440px; margin: 48px auto 0;
       border-radius: 28px; overflow: hidden;
       aspect-ratio: 9/16; background: #08080B;
       border: 1px solid rgba(255,255,255,0.12);
@@ -6331,6 +6331,11 @@
     const vidBefore = slider.querySelector('.ba-before video');
     const vidAfter = slider.querySelector('.ba-after video');
     if (vidBefore && vidAfter) {
+      vidBefore.muted = true;
+      vidAfter.muted = true;
+      vidBefore.play().catch(() => {});
+      vidAfter.play().catch(() => {});
+
       vidBefore.addEventListener('play', () => {
         vidAfter.currentTime = vidBefore.currentTime;
         vidAfter.play().catch(() => {});
