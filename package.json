@@ -1,0 +1,28 @@
+{
+  "name": "creativeorbitz",
+  "version": "2.0.0",
+  "description": "CreativeOrbitz — Full-Service Content Production, AI Content & Growth Agency",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test-api.js"
+  },
+  "keywords": [
+    "creative-agency",
+    "video-production",
+    "ai-content",
+    "social-growth",
+    "threejs",
+    "webgl",
+    "supabase"
+  ],
+  "author": "CreativeOrbitz",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "dotenv": "^16.4.7"
+  }
+}
