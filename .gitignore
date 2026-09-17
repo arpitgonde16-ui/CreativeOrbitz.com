@@ -22,3 +22,6 @@ yarn-error.log*
 # OS metadata
 .DS_Store
 Thumbs.db
+
+# Large video files
+assets/videos/*.mp4
